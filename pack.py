@@ -43,3 +43,13 @@ for btnRow in buttons:
     for btnText in btnRow:
         btn = tk.Button(rowFrame, text=btnText, width=5, height=2, command=lambda text=btnText: clickBtn(text))
         btn.pack(side=tk.LEFT, padx=5, pady=5)
+
+# clear "c" button
+clear = tk.Button(root, text="C", width=5, height=2, command= clearBtn)
+clear.pack(side=tk.LEFT, padx=5, pady=5)
+
+# equal "=" button
+equal = tk.Button(root, text="=", width=5, height=2, command=equalBtn)
+equal.pack(side=tk.LEFT, padx=5, pady=5)
+
+root.mainloop()
