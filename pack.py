@@ -35,3 +35,11 @@ buttons = [
     ('7',), ('8',), ('9',),
     ('.',), ('='), ('+'), ('-'), ('*'), ('/',)
 ]
+
+# loop
+for btnRow in buttons:
+    rowFrame = tk.Frame(btnFrame)
+    rowFrame.pack(side=tk.TOP)
+    for btnText in btnRow:
+        btn = tk.Button(rowFrame, text=btnText, width=5, height=2, command=lambda text=btnText: clickBtn(text))
+        btn.pack(side=tk.LEFT, padx=5, pady=5)
