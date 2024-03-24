@@ -32,3 +32,10 @@ passwordLabel.grid(row=2, column=0, sticky="w", padx=10, pady=5)
 
 passwordEntry = tk.Entry(root, show="*")
 passwordEntry.grid(row=2, column=1, padx=10, pady=5)
+
+# sign up now button
+signup_button = tk.Button(root, text="Sign Up Now", command=signup)
+signup_button.grid(row=3, columnspan=2, padx=10, pady=10)
+
+# run event
+root.mainloop()
