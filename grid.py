@@ -1,4 +1,5 @@
-from tkinter import *
-from tkinter import ttk
+import tkinter as tk
 
-root = Tk()
+# main window
+root = tk.Tk()
+root.title("Sign-Up Page")
