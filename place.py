@@ -23,3 +23,9 @@ passwordLabel.place(x=50, y=80)
 
 passwordEntry = tk.Entry(root, show="*")
 passwordEntry.place(x=150, y=80)
+
+# login button
+loginButton = tk.Button(root, text="Login", command=login)
+loginButton.place(x=150, y=120)
+
+root.mainloop()
