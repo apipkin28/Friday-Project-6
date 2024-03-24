@@ -23,3 +23,15 @@ def equalBtn():
 
 entry = tk.Entry(root, width=20, state='disabled')
 entry.pack(side=tk.TOP, pady=10)
+
+# buttons frame
+btnFrame = tk.Frame(root)
+btnFrame.pack(side=tk.TOP)
+
+# buttons
+buttons = [
+    ('0',), ('1',), ('2',), ('3',),
+    ('4',), ('5',), ('6',),
+    ('7',), ('8',), ('9',),
+    ('.',), ('='), ('+'), ('-'), ('*'), ('/',)
+]
